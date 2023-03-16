@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #091921;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator > button {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    background: #0c2835;
+    border: 3px solid rgba(0, 0, 0, .1);
+}
+
+.widthTwo { 
+    grid-column: span 2;
+}
+
+.calculator > button#ac {
+    background-color: #ff3077;
+}
+
+.calculator > button#equal {
+    background-color: #03b1ff;
+}
+
+.calculator > button:active,
+.calculator > button#ac:active,
+.calculator > button#equal:active {
+    background-color: #74ff3b;
+    color: #111;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .prevOperation {
+    color: rgba(0, 0, 0, .5);
+    font-size: 25px;
+}
+
+.display .currentOperation {
+    font-size: 35px;
+}

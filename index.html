@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="calculator">
+        <div class="display">
+            <div data-prevOperand class="prevOperation"></div>
+            <div data-currentOperand class="currentOperation"></div>
+        </div>
+        <button data-clear data-key="27" class="widthTwo" id="ac">AC</button>
+        <button data-delete data-key="8">DEL</button>
+        <button data-operation data-key="68">/</button>
+        <button data-number data-key="49">1</button>
+        <button data-number data-key="50">2</button>
+        <button data-number data-key="51">3</button>
+        <button data-operation data-key="88">*</button>
+        <button data-number data-key="52">4</button>
+        <button data-number data-key="53">5</button>
+        <button data-number data-key="54">6</button>
+        <button data-operation data-key="61">+</button>
+        <button data-number data-key="55">7</button>
+        <button data-number data-key="56">8</button>
+        <button data-number data-key="57">9</button>
+        <button data-operation data-key="173">-</button>
+        <button data-number data-key="190">.</button>
+        <button data-number data-key="48">0</button>
+        <button data-equals class="widthTwo" id="equal" data-key="13">=</button>
+    </main>
+
+    <script src="script.js"></script>
+</body> 
+</html>
